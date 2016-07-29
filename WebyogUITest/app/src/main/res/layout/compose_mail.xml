@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/FromLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/FromTextLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="From"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/mailFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/FromTextLabel"
+            android:background="@android:color/transparent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="uanthwal@gmail.com"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/Separator1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/mailFrom"
+            android:background="@color/windowBackground">
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ToLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/FromTextLabel"
+            android:layout_below="@+id/Separator1"
+            android:layout_marginTop="10dp"
+            android:text="To" />
+
+        <EditText
+            android:id="@+id/mailTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/mailFrom"
+            android:layout_below="@id/Separator1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/ToLabel"
+            android:background="@android:color/transparent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/Separator2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/mailTo"
+            android:background="@color/windowBackground"></RelativeLayout>
+
+        <EditText
+            android:id="@+id/mailSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Separator2"
+            android:background="@android:color/transparent"
+            android:hint="Mail Subject"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/Separator3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/mailSubject"
+            android:background="@color/windowBackground">
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/composeMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Separator3"
+            android:background="@android:color/transparent"
+            android:hint="Compose Mail"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

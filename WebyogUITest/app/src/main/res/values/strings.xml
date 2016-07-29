@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">WebyogUITest</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_inbox">Inbox</string>
+    <string name="nav_item_starred">Starred</string>
+    <string name="nav_item_unread">Unread</string>
+    <string name="nav_item_spam">Spam</string>
+    <string name="nav_item_trash">Trash</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_inbox</item>
+        <item>@string/nav_item_starred</item>
+        <item>@string/nav_item_unread</item>
+        <item>@string/nav_item_spam</item>
+        <item>@string/nav_item_trash</item>
+    </string-array>
+    <string-array name="nav_drawer_labels_icons">
+        <item>inbox</item>
+        <item>starred_nav</item>
+        <item>unread_mail_icon</item>
+        <item>spam</item>
+        <item>trash</item>
+    </string-array>
+    <string name="title_unread">Unread</string>
+    <string name="title_starred">Starred</string>
+    <string name="title_inbox">Inbox</string>
+    <string name="title_spam">Spam</string>
+    <string name="title_trash">Trash</string>
+    <string name="create_a_cloudmagic_id">Create a CloudMagic ID</string>
+    <string name="sync_accounts">Sync account and preferences across all your devices</string>
+</resources>

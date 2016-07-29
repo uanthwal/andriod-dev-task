@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/DMView1Parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:baselineAligned="false"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/DMView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0.8"
+            android:longClickable="true">
+
+            <TextView
+                android:id="@+id/mailTitleDM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="12 recuriter(s) expressed interest in your Naukri profile"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mailSubjectDM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/mailTitleDM"
+                android:layout_below="@id/mailTitleDM"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Rs. 50 free recharge from freecharge"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/DMView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/DMView1"
+            android:layout_weight="0.2">
+
+            <ImageView
+                android:id="@+id/mailStar"
+                android:layout_width="65px"
+                android:layout_height="65px"
+                android:layout_centerVertical="true"
+
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:contentDescription="Starred"
+                android:longClickable="true"
+                android:src="@drawable/starred" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/DMView1Parent"
+        android:background="@color/windowBackground"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/DMView2Parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Separator">
+
+        <ImageView
+            android:id="@+id/senderLetter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/senderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/senderLetter"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/senderLetter"
+            android:text="Upendra" />
+
+        <TextView
+            android:id="@+id/senderEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/senderName"
+            android:layout_below="@+id/senderName"
+            android:layout_marginTop="5dp"
+            android:text="uanthwal@gmail.com" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/reply"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/senderLetter"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="47dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView3"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/senderLetter"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ellipses" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/DMView2Parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/layout_border">
+
+        <TextView
+            android:id="@+id/mailBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:text="mail"
+            android:textSize="14dp"
+            android:paddingBottom="10dp" />
+    </ScrollView>
+
+</RelativeLayout>
